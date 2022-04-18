@@ -1,1 +1,9 @@
-#firstheading {color:#0000ff;}
+#blueheading {color:#0000ff;}
+
+p + p { text-indent: 2em; }
+
+#firstparagraph::first-letter { 
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
