@@ -10,7 +10,7 @@ School/Term:  Mizzou University, Spring 2022
 
 Developed: April 17, 2022
 
-Modified/Tested: Apr 17, 2022; Passed on Firefox and Chrome browsers
+Modified/Tested: Apr 24, 2022; Passed on Firefox and Chrome browsers
 
 ******************************************************************************-->
 
@@ -18,35 +18,43 @@ Modified/Tested: Apr 17, 2022; Passed on Firefox and Chrome browsers
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width">
+               
                <title>Reflection</title>
 
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <nav>
-        <p>Portfolio</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#project.html">Projects</a>
+    <div class="shell">
+        <div class="navbar">
+            <nav>
+                <p>Portfolio</p>
                 <ul>
-                    <li><a href="#"></a>Link 1</li>
-                    <li><a href="#"></a>Link 2</li>
-                    <li><a href="#"></a>Link 3</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#project.html">Projects</a>
+                        <ul>
+                            <li><a href="#"></a>Link 1</li>
+                            <li><a href="#"></a>Link 2</li>
+                            <li><a href="#"></a>Link 3</li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
                 </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
-    </nav>
+            </nav>
+        </div>
 
     <header>
-        <h1>Noah Marchbanks</h1>
-        <h3 id="blueheading">Reflection</h3>
+        <div class="heading0">
+            <h1>Noah Marchbanks</h1>
+            <h3 id="blueheading">Reflection</h3>
+        </div>
     </header>
 
     <main>
+        <div class="content1">
        <p id="firstparagraph">
         As a second semester college student, I have already learned so much more
         than what I could’ve imagined. I started my college experience as a Computer Science
@@ -71,10 +79,11 @@ Modified/Tested: Apr 17, 2022; Passed on Firefox and Chrome browsers
         my journey, learning just about anything I can get my hands on. I love to learn and use
         my abilities to create things for the world and aspire to be able to continue doing so
         throughout my life after college as a software developer.
-       </p> 
+        </p>
+        </div>
     </main>
         
-    <footer>
+    <footer class="footer">
         Noah Marchbanks<br>
         ncm5qf@umsystem.edu<br>
         &copy; Copyright 2022    

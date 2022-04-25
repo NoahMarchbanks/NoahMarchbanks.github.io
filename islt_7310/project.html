@@ -10,7 +10,7 @@ School/Term:  Mizzou University, Spring 2022
 
 Developed: April 12, 2022
 
-Modified/Tested: Apr 17, 2022; Passed on Firefox and Chrome browsers
+Modified/Tested: Apr 24, 2022; Passed on Firefox and Chrome browsers
 
 ******************************************************************************-->
 
@@ -18,42 +18,50 @@ Modified/Tested: Apr 17, 2022; Passed on Firefox and Chrome browsers
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width">
+               
                <title>Page Title</title>
 
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <nav>
-        <p>Portfolio</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#project.html">Projects</a>
+    <div class="shell">
+        <div class="navbar">
+            <nav>
+                <p>Portfolio</p>
                 <ul>
-                    <li><a href="#"></a>Link 1</li>
-                    <li><a href="#"></a>Link 2</li>
-                    <li><a href="#"></a>Link 3</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#project.html">Projects</a>
+                        <ul>
+                            <li><a href="#"></a>Link 1</li>
+                            <li><a href="#"></a>Link 2</li>
+                            <li><a href="#"></a>Link 3</li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
                 </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
-
-    </nav>
+            </nav>
+        </div>
 
     <header>
-        <h1>Noah Marchbanks</h1>
-        <h3 id="blueheading">Projects</h3>
+        <div class="heading0">
+            <h1>Noah Marchbanks</h1>
+            <h3 id="blueheading">Projects</h3>
+        </div>
     </header>
 
     <main>
-       <p>
+        <div class="content1">
+            <p>
         
-       </p> 
+            </p>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
           
     </footer>
 </body>
