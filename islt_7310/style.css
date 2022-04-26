@@ -21,7 +21,7 @@ p + p { text-indent: 2em; }
     height: 720px;
 }
 
-.navbar {
+.nav {
     grid-area: nav nav;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -91,14 +91,14 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
-    p {
-        font-size: 36px;
+@media (max-width: 700px) {
+    body {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 800px) {
-    p {
-        font-size: 30px;
+@media (min-width: 701px) {
+    body {
+        font-size: 24px;
     }
 }

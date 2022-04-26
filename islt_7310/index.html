@@ -18,7 +18,7 @@ Modified/Tested:  Apr 24, 2022; Passed on Firefox and Chrome browsers
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                
                <title>Home</title>
 
@@ -27,22 +27,28 @@ Modified/Tested:  Apr 24, 2022; Passed on Firefox and Chrome browsers
 </head>
 <body>
     <div class="shell">
-        <div class="navbar">
+        <div class="nav">
             <nav>
                 <p>Portfolio</p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#project.html">Projects</a>
-                        <ul>
+
+            <input type="checkbox" class="toggle">
+            <div class="hamburger"></div>
+
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a>
+                        <input type="checkbox" class="subtoggle">
+                        <div class="subhamburger"></div>
+                        <ul class="submenu">
                             <li><a href="#"></a>Link 1</li>
                             <li><a href="#"></a>Link 2</li>
                             <li><a href="#"></a>Link 3</li>
                         </ul>
-                    </li>
-                    <li><a href="reflection.html">Reflection</a></li>
-                    <li><a href="#contact.html">Contact</a></li>
-                </ul>
+                        </li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="#contact.html">Contact</a></li>
+                    </ul>
             </nav>
         </div>
 
