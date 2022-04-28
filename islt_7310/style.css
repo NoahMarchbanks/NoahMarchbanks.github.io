@@ -100,6 +100,8 @@ a {
 
 footer {
     font-weight: bold;
+    background-image: url(bgimage.jpg);
+    color: white;
 }
 
 @media (max-width: 700px) {
