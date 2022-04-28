@@ -90,6 +90,7 @@ p + p { text-indent: 2em; }
     grid-area: footer footer;
     grid-column-start: 1;
     grid-column-end: 4;
+    padding: 20px;
 }
 
 a {
@@ -103,7 +104,6 @@ footer {
     background-image: url(images/bgimage.jpg);
     background-size: cover;
     color: white;
-    padding: 20px;
 }
 
 img {
