@@ -103,10 +103,22 @@ footer {
     background-image: url(images/bgimage.jpg);
     background-size: cover;
     color: white;
+    padding: 20px;
 }
 
 img {
     background-color: white;
+}
+
+.pic {
+    width: 17px;
+    height: 17px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.pic:hover {
+    transform: scale(3);
 }
 
 @media (max-width: 700px) {
