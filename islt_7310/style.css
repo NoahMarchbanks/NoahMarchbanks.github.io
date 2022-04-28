@@ -1,4 +1,15 @@
-#blueheading {color:#0000ff;}
+@font-face { 
+    font-family: myFont; 
+    src: url('Montserrat-Medium.ttf');  
+}
+
+#blueheading {
+    color:#0000ff;
+}
+
+blockquote {
+    font-family: myFont, serif;
+}
 
 p + p { text-indent: 2em; }
 
