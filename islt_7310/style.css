@@ -100,7 +100,7 @@ a {
 
 footer {
     font-weight: bold;
-    background-image: url('/bgimage.jpg');
+    background-image: url(bgimage.jpg);
     background-size: cover;
     color: white;
 }
