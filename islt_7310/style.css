@@ -101,7 +101,12 @@ a {
 footer {
     font-weight: bold;
     background-image: url(bgimage.jpg);
+    background-size: cover;
     color: white;
+}
+
+img {
+    background-color: white;
 }
 
 @media (max-width: 700px) {
