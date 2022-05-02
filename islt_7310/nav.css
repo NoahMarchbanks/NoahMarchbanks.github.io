@@ -217,6 +217,11 @@ label {
     /*box-shadow: 20px 0 40px rgba(0,0,0,0.5);*/
 }
 
+.submenu li a {
+    width: 150px;
+    height: 10px;
+}
+
 @media screen and (max-width: 700px) {
     nav p {
         display: none;
