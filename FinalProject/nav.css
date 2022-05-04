@@ -1,0 +1,284 @@
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #424141;
+    padding-top: 20px;
+}
+
+nav p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ccffff;
+    font-size: 20px;
+    line-height: 0px;
+    float: left;
+    padding: 0px 10px;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background-color: #7b68ee;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ccffff;
+    font-size: 20px;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #424141;
+    padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+    color: #ccffff;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-radius: 1px;
+    padding: 4px 4px;
+}
+
+nav ul li ul li a {
+    padding: 4px 14px;
+}
+
+nav ul li ul li:hover {
+    background-color: #7b68ee;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+label {
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+.toggle {
+    display: block;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before {
+    top: -10px;
+    width: 20px;
+}
+
+.hamburger:after {
+    top: 10px;
+    width: 25px;
+}
+
+.toggle {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle {
+    display: none;
+}
+
+.nav input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.nav input:checked ~ .hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.nav input:checked ~ .hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.nav input:checked ~ .menu {
+    left: 0;
+    /*box-shadow: 20px 0 40px rgba(0,0,0,0.5);*/
+}
+
+.subhamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+    display: none;
+}
+
+.subhamburger:before,
+.subhamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: none;
+}
+
+.subhamburger:before {
+    top: -10px;
+    width: 20px;
+}
+
+.subhamburger:after {
+    top: 10px;
+    width: 25px;
+}
+
+.subtoggle {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 4;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.subhamburger,
+.subtoggle {
+    display: none;
+}
+
+.nav input:checked ~ .subhamburger {
+    background: transparent;
+}
+
+.nav input:checked ~ .subhamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.nav input:checked ~ .subhamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.nav input:checked ~ .submenu {
+    left: 0;
+    /*box-shadow: 20px 0 40px rgba(0,0,0,0.5);*/
+}
+
+.submenu li a {
+    width: 150px;
+    height: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    nav p {
+        display: none;
+    }
+    .hamburger,
+    .toggle {
+        display: block;
+    }
+    header {
+        padding: 10px 20px;
+    }
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -340px;
+        background: #424141;
+        width: 300px;
+        height: 100%;
+        padding-top: 74px;
+    }
+    .menu li {
+        width: 100%;
+    }
+    .menu li a {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255,255,255, 0.1) inset;
+    }
+    .submenu li {
+        display: none;
+        background-color: #424141;
+        left: 100px;
+        z-index: 4;
+        box-shadow: -10px -4px 0 rgba(0,0,0,0.3);
+    }
+    .nav input:checked ~ .submenu li{
+        display: block;
+    }
+    .subhamburger {
+        left: 150px;
+        top: -45px;
+        height: 5px;
+        width: 35px;
+        display: block;
+    }
+    .subhamburger:before,
+    .subhamburger:after {
+        height: 5px;
+        width: 35px;
+        display: block;
+    }
+    .subtoggle {
+        left: 150px;
+        top: -40px;
+        display: block;
+    }
+}
