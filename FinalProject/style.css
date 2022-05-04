@@ -132,6 +132,24 @@ img {
     transform: scale(3);
 }
 
+.meme {
+    width: 300px;
+    height: 300px;
+}
+
+.rock {
+    width: 500px;
+    height: 300px;
+}
+
+a {
+    padding: 5px;
+}
+
+strong {
+    color: red;
+}
+
 .graphic {
     background-color: #ccffff;
     width: 250px;
@@ -143,6 +161,23 @@ img {
     background-color: #ccffff;
     width: 250px;
     height: 300px;
+}
+
+table th {
+    background-color: #000;
+    color: white;
+}
+
+table td {
+    background-color: blue;
+    color: white;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
 }
 
 @media (max-width: 700px) {
