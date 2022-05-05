@@ -247,9 +247,15 @@ footer {
     .headshot {
         width: 150px; 
         height: 150px;
+        margin-left: 0px;
     }
     .shell {
         grid-gap: 0px;
+    }
+    .graphic,
+    .thumb {
+        width: 20%;
+        height: 20%;
     }
 }
 

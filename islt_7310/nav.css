@@ -241,24 +241,29 @@ label {
         top: 0;
         left: -340px;
         background: #424141;
-        width: 300px;
+        width: 50%;
         height: 100%;
-        padding-top: 74px;
     }
     .menu li {
-        width: 100%;
+        width: 99%;
+        border-bottom: 1px solid black;
     }
     .menu li a {
         padding: 30px;
         font-size: 24px;
-        box-shadow: 0 1px 0 rgba(255,255,255, 0.1) inset;
+        border-right: none;
     }
     .submenu li {
         display: none;
         background-color: #424141;
-        left: 100px;
+        left: 50%;
+        width: 70%;
         z-index: 4;
-        box-shadow: -10px -4px 0 rgba(0,0,0,0.3);
+        border: 2px solid black;
+        padding: 5px;
+    }
+    .submenu li a {
+        width: 45%;
     }
     .nav input:checked ~ .submenu li{
         display: block;
