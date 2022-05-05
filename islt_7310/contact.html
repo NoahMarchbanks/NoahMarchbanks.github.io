@@ -1,0 +1,90 @@
+<!-- *****************************************************************************
+
+Title:  Reflection Page
+
+Purpose: To explain what I learned during my college experience so far
+
+Author:  Noah Marchbanks
+
+School/Term:  Mizzou University, Spring 2022
+
+Developed: April 17, 2022
+
+Modified/Tested: May 1, 2022; Passed on Firefox and Chrome browsers
+
+******************************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               
+               <title>Contact</title>
+
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+               <link rel="icon" type="image/x-icon" href="images/Logo.png">
+</head>
+<body>
+    <div class="shell">
+        <div class="nav">
+            <nav>
+                <p>Contact</p>
+
+            <input type="checkbox" class="toggle">
+            <div class="hamburger"></div>
+
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a>
+                        <input type="checkbox" class="subtoggle">
+                        <div class="subhamburger"></div>
+                        <ul class="submenu">
+                            <li><a href="project.html"></a>Radio Spot</li>
+                            <li><a href="project.html"></a>Logos</li>
+                            <li><a href="project.html"></a>Thumbnail</li>
+                        </ul>
+                        </li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+    <header>
+        <div class="heading0">
+            <h3 id="blueheading">Contact</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="content0">
+            <form action="mailto:ncm5qf@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+                <div class="emailForm">
+                First Name<label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" autofocus required>
+                <br>
+                Last Name<label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                <br>
+                Email<label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br><br>
+                <textarea name ="message" id="message" rows="15" cols="95" placeholder="Enter message here"></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Noah Marchbanks<br>
+        <img class="pic" src="images/icons8-mailbox-16.png" alt="Email">ncm5qf@umsystem.edu<br>
+        <img class="pic" src="images/icons8-call-16.png" alt="Phone">1+(573)559-5738<br>
+        &copy; Copyright 2022    
+    </footer>
+</body>
+</html>
