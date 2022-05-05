@@ -33,7 +33,7 @@ p + p { text-indent: 2em; }
                          "footer footer";
     grid-gap: 20px;
     justify-content: start;
-    height: 720px;
+    height: 100%;
 }
 
 .nav {
@@ -108,7 +108,10 @@ footer {
     background-image: url(images/bgimage.jpg);
     background-size: cover;
     color: white;
-    width: 100%;
+}
+
+footer {
+    text-align: center;
 }
 
 .headshot {
@@ -207,6 +210,13 @@ form {
 nav,
 footer {
     width: 100%;
+}
+
+.heading0,
+.heading1,
+.heading2,
+.heading3 {
+    margin-left: 5px;
 }
 
 @media (max-width: 700px) {
