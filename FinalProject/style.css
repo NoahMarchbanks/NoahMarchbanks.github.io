@@ -33,13 +33,13 @@ p + p { text-indent: 2em; }
                          "footer footer";
     grid-gap: 20px;
     justify-content: start;
-    height: 720px;
+    height: 100%;
 }
 
 .nav {
     grid-area: nav nav;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
 }
 
 .heading0 {
@@ -93,7 +93,8 @@ p + p { text-indent: 2em; }
 .footer {
     grid-area: footer footer;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    grid-row-start: 6;
 }
 
 a {
@@ -107,7 +108,10 @@ footer {
     background-image: url(images/bgimage.jpg);
     background-size: cover;
     color: white;
-    padding: 20px;
+}
+
+footer {
+    text-align: center;
 }
 
 .headshot {
@@ -132,24 +136,6 @@ img {
     transform: scale(3);
 }
 
-.meme {
-    width: 300px;
-    height: 300px;
-}
-
-.rock {
-    width: 500px;
-    height: 300px;
-}
-
-a {
-    padding: 5px;
-}
-
-strong {
-    color: red;
-}
-
 .graphic {
     background-color: #ccffff;
     width: 250px;
@@ -163,32 +149,167 @@ strong {
     height: 300px;
 }
 
-table th {
-    background-color: #000;
-    color: white;
-}
-
-table td {
+thead,
+tfoot {
     background-color: blue;
-    color: white;
 }
 
-pre code {
-    background-color: #eee;
-    border: 1px solid #999;
-    display: block;
-    padding: 20px;
+table,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table {
+    width: 300px;
+}
+
+th, caption {
+    text-align: left;
+}
+
+tbody td:nth-of-type(odd) {
+    background-color: green;
+}
+
+tbody td:nth-of-type(even) {
+    background-color: purple;
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    margin-left: 100px;
+}
+
+#email {
+    margin-left: 50px;
+}
+
+#lastname {
+    margin-left: 2px;
+}
+
+#firstname,
+#lastname,
+#email {
+    width: 50%;
+}
+
+#message {
+    width: 75%;
+}
+
+nav,
+footer {
+    width: 100%;
+}
+
+.heading0,
+.heading1,
+.heading2,
+.heading3 {
+    margin-left: 5px;
 }
 
 @media (max-width: 700px) {
     body {
-        font-size: 20px;
+        font-size: 12px;
+    }
+    table {
+        width: 200px;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 2px;
+    }
+    form {
+        margin-left: 50px;
+    }
+    #lastname {
+        margin-left: 1px;
+        width: 200px;
+        font-size: 10px;
+    }
+    #firstname {
+        margin-left: 0px;
+        width: 200px;
+        font-size: 10px;
+    }
+    #email {
+        margin-left: 25px;
+        width: 200px;
+        font-size: 10px;
+    }
+    #message {
+        width: 50%;
+        height: 100px;
+        margin-left: 55px;
+        font-size: 10px;
+    }
+    .headshot {
+        width: 150px; 
+        height: 150px;
+        margin-left: 0px;
+    }
+    .shell {
+        grid-gap: 0px;
+    }
+    .graphic,
+    .thumb {
+        width: 20%;
+        height: 20%;
     }
 }
 
 @media (min-width: 701px) {
     body {
         font-size: 24px;
+    }
+    table {
+        width: 300px;
+    }
+    th, td {
+        font-size: 24px;
+        padding: 5px;
+    }
+    form {
+        margin-left: 100px;
+    }
+    #lastname {
+        margin-left: 2px;
+        width: 50%;
+        font-size: 18px;
+    }
+    #firstname {
+        margin-left: 0px;
+        width: 50%;
+        font-size: 18px;
+    }
+    #email {
+        margin-left: 50px;
+        width: 50%;
+        font-size: 18px;
+    }
+    #message {
+        width: 75%;
+        height: 150px;
+        margin-left: 112px;
+        font-size: 18px;
+    }
+    .headshot {
+        width: 300px; 
+        height: 300px;
+    }
+    .shell {
+        grid-gap: 20px;
     }
 }
 
