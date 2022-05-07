@@ -33,13 +33,13 @@ p + p { text-indent: 2em; }
                          "footer footer";
     grid-gap: 20px;
     justify-content: start;
-    height: 100%;
+    height: 720px;
 }
 
 .nav {
     grid-area: nav nav;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
 }
 
 .heading0 {
@@ -93,8 +93,7 @@ p + p { text-indent: 2em; }
 .footer {
     grid-area: footer footer;
     grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 6;
+    grid-column-end: 4;
 }
 
 a {
@@ -108,10 +107,7 @@ footer {
     background-image: url(images/bgimage.jpg);
     background-size: cover;
     color: white;
-}
-
-footer {
-    text-align: center;
+    padding: 20px;
 }
 
 .headshot {
@@ -136,6 +132,24 @@ img {
     transform: scale(3);
 }
 
+.meme {
+    width: 300px;
+    height: 300px;
+}
+
+.rock {
+    width: 500px;
+    height: 300px;
+}
+
+a {
+    padding: 5px;
+}
+
+#warning {
+    color: red;
+}
+
 .graphic {
     background-color: #ccffff;
     width: 250px;
@@ -149,67 +163,21 @@ img {
     height: 300px;
 }
 
-thead,
-tfoot {
+table th {
+    background-color: #000;
+    color: white;
+}
+
+table td {
     background-color: blue;
+    color: white;
 }
 
-table,
-th,
-td {
-    border: 1px solid #000;
-    border-collapse: separate;
-}
-
-th, td {
-    padding: 5px;
-}
-
-table {
-    width: 300px;
-}
-
-th, caption {
-    text-align: left;
-}
-
-tbody td:nth-of-type(odd) {
-    background-color: green;
-}
-
-tbody td:nth-of-type(even) {
-    background-color: purple;
-}
-
-textarea {
-    resize: none;
-}
-
-form {
-    margin-left: 100px;
-}
-
-#email {
-    margin-left: 50px;
-}
-
-#lastname {
-    margin-left: 2px;
-}
-
-#firstname,
-#lastname,
-#email {
-    width: 50%;
-}
-
-#message {
-    width: 75%;
-}
-
-nav,
-footer {
-    width: 100%;
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
 }
 
 .heading0,
@@ -219,53 +187,43 @@ footer {
     margin-left: 5px;
 }
 
+table, td, tr {
+    border: 1px solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid yellow;
+}
+
+caption {
+    font-weight: bold;
+    color: purple;
+}
+
 @media (max-width: 700px) {
     body {
-        font-size: 12px;
+        font-size: 15px;
     }
-    table {
-        width: 200px;
-    }
-    th, td {
-        font-size: 12px;
-        padding: 2px;
-    }
-    form {
-        margin-left: 50px;
-    }
-    #lastname {
-        margin-left: 1px;
-        width: 200px;
-        font-size: 10px;
-    }
-    #firstname {
-        margin-left: 0px;
-        width: 200px;
-        font-size: 10px;
-    }
-    #email {
-        margin-left: 25px;
-        width: 200px;
-        font-size: 10px;
-    }
-    #message {
-        width: 50%;
-        height: 100px;
-        margin-left: 55px;
-        font-size: 10px;
-    }
-    .headshot {
-        width: 150px; 
-        height: 150px;
-        margin-left: 0px;
-    }
-    .shell {
-        grid-gap: 0px;
+    img {
+        width: 30%;
+        height: 30%;
     }
     .graphic,
     .thumb {
-        width: 20%;
-        height: 20%;
+        width: 30%;
+        height: 30%;
+    }
+    .webimage {
+        font-size: 15px;
+    }
+    .jerry {
+        width: 50%;
+        height: 50%;
+    }
+    a {
+        font-size: 15px;
     }
 }
 
@@ -273,43 +231,17 @@ footer {
     body {
         font-size: 24px;
     }
-    table {
-        width: 300px;
-    }
-    th, td {
-        font-size: 24px;
-        padding: 5px;
-    }
-    form {
-        margin-left: 100px;
-    }
-    #lastname {
-        margin-left: 2px;
+    img {
         width: 50%;
-        font-size: 18px;
+        height: 50%;
     }
-    #firstname {
+    .graphic,
+    .thumb {
+        width: 50%;
+        height: 50%;
+    }
+    pre code {
         margin-left: 0px;
-        width: 50%;
-        font-size: 18px;
-    }
-    #email {
-        margin-left: 50px;
-        width: 50%;
-        font-size: 18px;
-    }
-    #message {
-        width: 75%;
-        height: 150px;
-        margin-left: 112px;
-        font-size: 18px;
-    }
-    .headshot {
-        width: 300px; 
-        height: 300px;
-    }
-    .shell {
-        grid-gap: 20px;
     }
 }
 
