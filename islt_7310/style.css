@@ -37,7 +37,7 @@ p + p { text-indent: 2em; }
 }
 
 .nav {
-    grid-area: nav nav;
+    grid-area: nav;
     grid-column-start: 1;
     grid-column-end: 6;
 }
@@ -91,7 +91,7 @@ p + p { text-indent: 2em; }
 }
 
 .footer {
-    grid-area: footer footer;
+    grid-area: footer;
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 6;
