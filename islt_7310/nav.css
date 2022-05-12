@@ -7,7 +7,8 @@ nav {
 
 nav p {
     font-family: 'Times New Roman', Times, serif;
-    color: #ccffff;
+    color: greenyellow;
+    text-decoration: underline;
     font-size: 20px;
     line-height: 0px;
     float: left;
@@ -222,7 +223,7 @@ label {
     height: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     nav p {
         display: none;
     }
@@ -237,7 +238,7 @@ label {
         flex-direction: column;
         position: fixed;
         top: 0;
-        left: -340px;
+        left: -400px;
         background: #424141;
         width: 50%;
         height: 100%;
